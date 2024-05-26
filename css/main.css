@@ -3,50 +3,56 @@
     display: none;
 }
 
+/* body要素のスタイル */
 body{
-    background-color: #FFFBF3;
-    margin: 0;
-    font-family: 'Inter';
+    background-color: #FFFBF3; /* 背景色の設定 */
+    margin: 0; /* 余白を0にする */
+    font-family: 'Inter'; /* フォントの指定 */
 }
 
+/* .wrapクラスのスタイル */
 .wrap{
-    margin: 2em;
+    margin: 2em; /* 外側の余白を設定 */
 }
 
+/* .headerクラスのスタイル */
 header{
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* フレックスボックスを使う */
+    justify-content: space-between; /* 子要素を左右に分散配置 */
 }
 
+/* nav要素内のul要素のスタイル */
 nav ul{
-    background: white;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    margin: 0;
-    list-style: none;
-    width: 40%;
-    text-align: right;
-    padding: 2em;
-    transform: translateX(100%);
+    background: white; /* 背景色を白に設定 */
+    position: fixed; /* 位置を固定 */
+    z-index: 999; /* 重なり順を最前面に設定 */
+    top: 0; /* 上端に配置 */
+    right: 0; /* 右端に配置 */
+    height: 100vh; /* 高さを100%に設定 */
+    margin: 0; /* 余白を0にする */
+    list-style: none; /* リストのマーカーを非表示にする */
+    width: 40%; /* 幅を40%に設定 */
+    text-align: right; /* テキストを右寄せに設定 */
+    padding: 2em; /* 内側の余白を設定 */
+    transform: translateX(100%); /* X軸方向に移動 */
 
+    /* ハンバーガーメニューを開いたときのスタイル */
     li{
-        margin: 2em 0;
+        margin: 2em 0; /* 上下の余白を設定 */
 
-        &:nth-last-of-type(1) {
-            margin-bottom: 2em;
+        &:nth-last-of-type(1) { /* 最後の要素に対して */
+            margin-bottom: 2em; /* 下側の余白を設定 */
         }
 
+        /* a要素のスタイル */
         a{
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.5rem;
+            color: black; /* テキストの色を黒に設定 */
+            text-decoration: none; /* 下線を非表示にする */
+            font-weight: bold; /* フォントの太さを太字にする */
+            font-size: 1.5rem; /* フォントサイズを1.5remに設定 */
 
-            &:hover{
-                text-decoration: underline;
+            &:hover{ /* ホバー時のスタイル */
+                text-decoration: underline; /* 下線を表示 */
             }
         }   
     }
