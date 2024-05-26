@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- main.cssスタイルシートのリンク -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -12,25 +13,29 @@
         
         <header>
             <div class="header-left">
+                <!-- ロゴのリンク　クリックするとindex.htmlに移動 -->
                 <a href="index.html">
                     <img src="logo.svg" alt="Friskay Logo">
                 </a>
+                <!-- モバイル表示では非表示になる区切り線 -->
                 <div class="divider" hide-mobile></div>
+                <!-- モバイル表示では非表示、タブレットサイズ以上で表示されるHomeのリンク -->
                 <a href="#" class="home hide-mobile">Home</a> 
-                <!--hide-mobileはHomeをモバイルで非表示、タブレットサイズで表示させるための記述-->
             </div>
             <nav>
+                <!-- モバイル表示でメニューを開くためのハンバーガーアイコン。デスクトップでは非表示 -->
                 <a href="#" class="menu-open hide-desktop">
-                <!--menu-openはモバイルでハンバーガーを開くときの設定-->
                     <img src="menu.svg" alt="Open menu">
                 </a>
                 <ul>
                     <li>
+                        <!-- メニューを閉じるためのアイコンクリック -->
                         <a href="#" class="menu-close">
                             <img src="close.svg" alt="close menu">
                         </a>
+                        <!-- 以下、ナビゲーションメニュー項目 -->
                         <li><a href="#">Our Food</a></li>
-                        <li><a href="#">Lngredients</a></li>
+                        <li><a href="#">Ingredients</a></li>
                         <li><a href="#">Studies</a></li>
                         <li><a href="#">FAQ</a></li>
                     </li>
@@ -39,18 +44,24 @@
         </header>
 
         <main>
+            <!-- メイン見出し。bonkers.svgを含む -->
             <h1>Your cat will go <img src="bonkers.svg" alt="Text that says bonkers"></h1>
+            <!-- サブヘッドとしての段落 -->
             <p class="subhead">
                 ..for the world’s best testing cat food, sourced with
                 only the finest ingredients. Made with love from the
                 heart of Mississippi.
             </p>
+            <!-- プライマリーCAT（コールトゥアクション）のボタン -->
             <a href="#" class="primary-cta">Get Bonkers</a>
         </main>
 
         <div class="cat-container">
+            <!-- 猫のイラスト画像 -->
             <img src="cat.png" alt="cat illustration">
+            <!-- 内側の円形要素 -->
             <div class="inner-circle"></div>
+            <!-- 外側の円形要素 -->
             <div class="outer-circle"></div>
         </div>
     </div>
