@@ -35,6 +35,7 @@ nav ul{
     text-align: right; /* テキストを右寄せに設定 */
     padding: 2em; /* 内側の余白を設定 */
     transform: translateX(100%); /* X軸方向に移動 */
+    transition: transform 0.5s ease-in-out; /* サブメニューのアニメーションの設定 */
 
     /* ハンバーガーメニューを開いたときのスタイル */
     li{
