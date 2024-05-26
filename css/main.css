@@ -62,3 +62,17 @@ nav ul{
 .open{
     transform: translateX(0%);
 }
+
+/* .menuクラスのスタイル */
+h1, p {
+    text-align: center; /* テキストを中央に配置 */ 
+}
+
+h1 {
+    margin-top: 3em; /* 上側の余白を設定 */
+
+    img {
+        display: block; /* 画像をブロック要素にする */
+        margin: 0 auto; /* 画像を中央に配置 */
+    }
+}
