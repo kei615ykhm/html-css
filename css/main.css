@@ -1,5 +1,24 @@
+/* Homeを非表示にする */
+.hide-mobile{
+    display: none;
+}
+
 body{
     background-color: #FFFBF3;
     margin: 0;
     font-family: 'Inter';
+}
+
+.wrap{
+    margin: 2em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* サブメニューの背景を白にする */
+nav ul{
+    background: white;
 }
