@@ -3,30 +3,30 @@
 }
 
 /* Homeを非表示にする */
-.hide-mobile{
+.hide-mobile {
     display: none;
 }
 
 /* body要素のスタイル */
-body{
+body {
     background-color: #FFFBF3; /* 背景色の設定 */
     margin: 0; /* 余白を0にする */
     font-family: 'Inter'; /* フォントの指定 */
 }
 
 /* .wrapクラスのスタイル */
-.wrap{
+.wrap {
     margin: 2em; /* 外側の余白を設定 */
 }
 
 /* .headerクラスのスタイル */
-header{
+header {
     display: flex; /* フレックスボックスを使う */
     justify-content: space-between; /* 子要素を左右に分散配置 */
 }
 
 /* nav要素内のul要素のスタイル */
-nav ul{
+nav ul {
     background: white; /* 背景色を白に設定 */
     position: fixed; /* 位置を固定 */
     z-index: 999; /* 重なり順を最前面に設定 */
@@ -42,7 +42,7 @@ nav ul{
     transition: transform 0.5s ease-in-out; /* サブメニューのアニメーションの設定 */
 
     /* ハンバーガーメニューを開いたときのスタイル */
-    li{
+    li {
         margin: 2em 0; /* 上下の余白を設定 */
 
         &:nth-last-of-type(1) { /* 最後の要素に対して */
@@ -63,7 +63,7 @@ nav ul{
     }
 }
 
-.open{
+.open {
     transform: translateX(0%); /* X軸方向に移動 */
 }
 
@@ -122,7 +122,7 @@ p {
         transform: translate(-50%, -50%); /* X軸方向とY軸方向に移動して中央揃えに配置 */
     }
 
-    .inner-circle {
+    .outer-circle {
         background: #FFEBC3; /* 背景色を黄色に設定 */
         width: 300px; /* 幅を300pxに設定 */
         height: 300px; /* 高さを300pxに設定 */
