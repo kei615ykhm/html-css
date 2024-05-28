@@ -105,6 +105,7 @@ p {
     position: relative; /* 相対位置に配置 */
     height: 500px; /* 高さを500pxに設定 */
     width: 100%; /* 幅を100%に設定 */
+    margin-top: 3em; /* 上側の余白を設定 */
 
     img {
         width: 70%; /* 画像の幅を70%に設定 */
@@ -114,7 +115,7 @@ p {
 
     }
 
-    .inner-circle {
+    .inner-circle, .outer-circle {
         position: absolute; /* 絶対位置に配置 */
         border-radius: 50%; /* 角を50%の半径で丸く設定 */
         left: 50%; /* 左端を50%に設定 */
@@ -122,10 +123,19 @@ p {
         transform: translate(-50%, -50%); /* X軸方向とY軸方向に移動して中央揃えに配置 */
     }
 
-    .outer-circle {
+    .inner-circle {
         background: #FFEBC3; /* 背景色を黄色に設定 */
+        border-radius: 50%; /* 角を50%の半径で丸く設定 */
         width: 300px; /* 幅を300pxに設定 */
         height: 300px; /* 高さを300pxに設定 */
         z-index: -1; /* 重なり順を最背面に設定 */
+    }
+
+    .outer-circle {
+        background: white; /* 背景色を黄色に設定 */
+        border-radius: 50%; /* 角を50%の半径で丸く設定 */
+        width: 500px; /* 幅を500pxに設定 */
+        height: 500px; /* 高さを500pxに設定 */
+        z-index: -2; /* 重なり順を最背面に設定 */
     }
 }
