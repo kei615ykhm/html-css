@@ -179,5 +179,9 @@ p {
         height: auto; /* 高さを自動に設定 */
         width: auto; /* 幅を自動に設定 */
         transform: translateX(0%); /* X軸方向に移動しない */
+
+        li a {
+            font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
+        }
     }
 }
