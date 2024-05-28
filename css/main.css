@@ -140,7 +140,7 @@ p {
     }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 998px) {
     .wrap {
         margin: 0 4em; /* 外側の余白を設定 */
     }
