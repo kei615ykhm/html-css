@@ -139,3 +139,13 @@ p {
         z-index: -2; /* 重なり順を最背面に設定 */
     }
 }
+
+@media (min-width: 750px) {
+    .wrap {
+        margin: 0 4em; /* 外側の余白を設定 */
+    }
+
+    .hide-desktop {
+        display: none; /* デスクトップサイズで非表示にする */
+    }
+}
