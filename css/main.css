@@ -148,4 +148,36 @@ p {
     .hide-desktop {
         display: none; /* デスクトップサイズで非表示にする */
     }
+    .hide-mobile {
+        display: block; /* モバイルサイズで表示する */
+    }
+
+    .header-left {
+        display: flex; /* フレックスボックスを使う */
+        justify-content: space-between; /* 子要素を左右に分散配置 */
+        align-items: center; /* 子要素を中央に配置 */
+        gap: 1em; /* 子要素間の間隔を1emに設定 */
+
+        .divider {
+            height: 50px; /* 高さを50pxに設定 */
+            width: 50px; /* 幅を50pxに設定 */
+            border-right: 1px solid gray; /* ホームの左側にラインを引く */
+        }
+
+        a {
+            text-decoration: none; /* 下線を非表示にする */
+            color: black; /* テキストの色を黒に設定 */
+            font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
+        }
+    }
+
+    nav ul {
+        position: unset; /* 位置を固定しない */
+        background: none; /* 背景色を透明に設定 */
+        display: flex; /* フレックスボックスを使う */
+        gap: 2em; /* 子要素間の間隔を2emに設定 */
+        height: auto; /* 高さを自動に設定 */
+        width: auto; /* 幅を自動に設定 */
+        transform: translateX(0%); /* X軸方向に移動しない */
+    }
 }
