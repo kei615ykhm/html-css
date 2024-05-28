@@ -87,7 +87,7 @@ p {
 }
 
 /* .primary-ctaクラスのスタイル */
-.primary-cta {
+a.primary-cta {
     background: #FFA800; /* 背景色をオレンジに設定 */
     padding: 1em; /* 内側の余白を設定 */
     width: 100%; /* 幅を100%に設定 */
@@ -99,6 +99,7 @@ p {
     font-size: 1.3rem; /* フォントサイズを1.3remに設定 */
     color: black; /* テキストの色を黒に設定 */
     border-radius: .3em; /* 角を0.3emの半径で丸く設定 */
+    margin-top: 3em; /* 上側の余白を設定 */
 }
 
 .cat-container {
@@ -182,6 +183,67 @@ p {
 
         li a {
             font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    h1, p {
+        text-align: left; /* テキストを左寄せに配置 */
+    }
+
+    h1 img {
+        margin: 0; /* 余白を0にする */
+    }
+
+    main {
+        width: 50%; /* 幅を50%に設定 */
+    }
+
+    .cat {
+        margin-top: 0; /* 上側の余白を0にする */
+
+        .inner-circle {
+            width: 500px; /* 幅を500pxに設定 */
+            height: 500px; /* 高さを500pxに設定 */
+        }  
+
+        .outer-circle {
+            width: 1000px; /* 幅を1000pxに設定 */
+            height: 1000%; /* 高さを1000pxに設定 */
+        }  
+    }
+
+    .cat-container {
+        position: absolute; /* 絶対位置に配置 */
+        z-index: -1; /* 重なり順を最背面に設定 */
+        width: 50%; /* 幅を50%に設定 */
+        top: 20%; /* 上端を20%に設定 */
+        right: 0; /* 右端に配置 */
+        margin: 0; /* 余白を0にする */
+    }
+}
+
+@media (min-width:1200px) {
+
+    .wrap {
+        margin: 0 auto; /* 外側の余白を設定 */
+        padding: 0 2em; /* 内側の余白を設定 */
+        max-width: 1200px; /* 最大幅を1200pxに設定 */
+    }
+
+    a.primary-cta {
+        display: inline-block; /* インラインブロック要素にする */
+        width: auto; /* 幅を自動に設定 */
+        padding: 1em 2em; /* 内側の余白を設定 */
+    }
+
+    .cat {
+        position: relative;
+
+        img {
+            max-width: 400px; /* 最大幅を400pxに設定 */
+            left: 50%; /* 左端を50%に設定 */
         }
     }
 }
