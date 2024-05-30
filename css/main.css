@@ -1,246 +1,252 @@
 /* Homeを非表示にする */
 .hide-mobile {
-    display: none;
+  display: none;
 }
 
 /* body要素のスタイル */
 body {
-    background-color: #FFFBF3; /* 背景色の設定 */
-    margin: 0; /* 余白を0にする */
-    font-family: 'Inter'; /* フォントの指定 */
+  background-color: #fffbf3; /* 背景色の設定 */
+  margin: 0; /* 余白を0にする */
+  font-family: 'Inter'; /* フォントの指定 */
 }
 
 /* .wrapクラスのスタイル */
 .wrap {
-    margin: 2em; /* 外側の余白を設定 */
+  margin: 2em; /* 外側の余白を設定 */
 }
 
 /* .headerクラスのスタイル */
 header {
-    display: flex; /* フレックスボックスを使う */
-    justify-content: space-between; /* 子要素を左右に分散配置 */
+  display: flex; /* フレックスボックスを使う */
+  justify-content: space-between; /* 子要素を左右に分散配置 */
 }
 
 /* nav要素内のul要素のスタイル */
 nav ul {
-    background: white; /* 背景色を白に設定 */
-    position: fixed; /* 位置を固定 */
-    z-index: 999; /* 重なり順を最前面に設定 */
-    top: 0; /* 上端に配置 */
-    right: 0; /* 右端に配置 */
-    height: 100vh; /* 高さを100%に設定 */
-    margin: 0; /* 余白を0にする */
-    list-style: none; /* リストのマーカーを非表示にする */
-    width: 40%; /* 幅を40%に設定 */
-    text-align: right; /* テキストを右寄せに設定 */
-    padding: 2em; /* 内側の余白を設定 */
-    transform: translateX(100%); /* X軸方向に移動 */
-    transition: transform 0.5s ease-in-out; /* サブメニューのアニメーションの設定 */
+  background: white; /* 背景色を白に設定 */
+  position: fixed; /* 位置を固定 */
+  z-index: 999; /* 重なり順を最前面に設定 */
+  top: 0; /* 上端に配置 */
+  right: 0; /* 右端に配置 */
+  height: 100vh; /* 高さを100%に設定 */
+  margin: 0; /* 余白を0にする */
+  list-style: none; /* リストのマーカーを非表示にする */
+  width: 40%; /* 幅を40%に設定 */
+  text-align: right; /* テキストを右寄せに設定 */
+  padding: 2em; /* 内側の余白を設定 */
+  transform: translateX(100%); /* X軸方向に移動 */
+  transition: transform 0.5s ease-in-out; /* サブメニューのアニメーションの設定 */
 
-    /* ハンバーガーメニューを開いたときのスタイル */
-    li {
-        margin: 2em 0; /* 上下の余白を設定 */
+  /* ハンバーガーメニューを開いたときのスタイル */
+  li {
+    margin: 2em 0; /* 上下の余白を設定 */
 
-        &:nth-last-of-type(1) { /* 最後の要素に対して */
-            margin-bottom: 2em; /* 下側の余白を設定 */
-        }
-
-        /* a要素のスタイル */
-        a{
-            color: black; /* テキストの色を黒に設定 */
-            text-decoration: none; /* 下線を非表示にする */
-            font-weight: bold; /* フォントの太さを太字にする */
-            font-size: 1.5rem; /* フォントサイズを1.5remに設定 */
-
-            &:hover{ /* ホバー時のスタイル */
-                text-decoration: underline; /* 下線を表示 */
-            }
-        }   
+    &:nth-last-of-type(1) {
+      /* 最後の要素に対して */
+      margin-bottom: 2em; /* 下側の余白を設定 */
     }
+
+    /* a要素のスタイル */
+    a {
+      color: black; /* テキストの色を黒に設定 */
+      text-decoration: none; /* 下線を非表示にする */
+      font-weight: bold; /* フォントの太さを太字にする */
+      font-size: 1.5rem; /* フォントサイズを1.5remに設定 */
+
+      &:hover {
+        /* ホバー時のスタイル */
+        text-decoration: underline; /* 下線を表示 */
+      }
+    }
+  }
 }
 
 .open {
-    transform: translateX(0%); /* X軸方向に移動 */
+  transform: translateX(0%); /* X軸方向に移動 */
 }
 
 /* .menuクラスのスタイル */
-h1, p {
-    text-align: center; /* テキストを中央に配置 */ 
+h1,
+p {
+  text-align: center; /* テキストを中央に配置 */
 }
 
 h1 {
-    margin-top: 3em; /* 上側の余白を設定 */
+  margin-top: 3em; /* 上側の余白を設定 */
 
-    img {
-        display: block; /* 画像をブロック要素にする */
-        margin: 0 auto; /* 画像を中央に配置 */
-    }
+  img {
+    display: block; /* 画像をブロック要素にする */
+    margin: 0 auto; /* 画像を中央に配置 */
+  }
 }
 
 p {
-    font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
-    line-height: 1.5; /* 行間を1.5に設定 */
+  font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
+  line-height: 1.5; /* 行間を1.5に設定 */
 }
 
 /* .primary-ctaクラスのスタイル */
 a.primary-cta {
-    background: #FFA800; /* 背景色をオレンジに設定 */
-    padding: 1em; /* 内側の余白を設定 */
-    width: 100%; /* 幅を100%に設定 */
-    box-sizing: border-box; /* ボックスモデルをborder-boxに設定 */
-    display: block; /* ブロック要素として表示 */
-    text-align: center; /* テキストを中央に配置 */
-    text-decoration: none; /* 下線を非表示にする */
-    font-weight: bold; /* フォントの太さを太字にする */
-    font-size: 1.3rem; /* フォントサイズを1.3remに設定 */
-    color: black; /* テキストの色を黒に設定 */
-    border-radius: .3em; /* 角を0.3emの半径で丸く設定 */
-    margin-top: 3em; /* 上側の余白を設定 */
+  background: #ffa800; /* 背景色をオレンジに設定 */
+  padding: 1em; /* 内側の余白を設定 */
+  width: 100%; /* 幅を100%に設定 */
+  box-sizing: border-box; /* ボックスモデルをborder-boxに設定 */
+  display: block; /* ブロック要素として表示 */
+  text-align: center; /* テキストを中央に配置 */
+  text-decoration: none; /* 下線を非表示にする */
+  font-weight: bold; /* フォントの太さを太字にする */
+  font-size: 1.3rem; /* フォントサイズを1.3remに設定 */
+  color: black; /* テキストの色を黒に設定 */
+  border-radius: 0.3em; /* 角を0.3emの半径で丸く設定 */
+  margin-top: 3em; /* 上側の余白を設定 */
 }
 
 .cat {
-    position: relative; /* 相対位置に配置 */
+  position: relative; /* 相対位置に配置 */
+  height: 500px; /* 高さを500pxに設定 */
+  width: 100%; /* 幅を100%に設定 */
+  margin-top: 3em; /* 上側の余白を設定 */
+
+  img {
+    width: 70%; /* 画像の幅を70%に設定 */
+    position: absolute; /* 絶対位置に配置 */
+    left: 50%; /* 左端を50%に設定 */
+    transform: translate(-50%); /* X軸方向に移動して中央揃えに配置 */
+  }
+
+  .inner-circle,
+  .outer-circle {
+    position: absolute; /* 絶対位置に配置 */
+    border-radius: 50%; /* 角を50%の半径で丸く設定 */
+    left: 50%; /* 左端を50%に設定 */
+    top: 50%; /* 上端を50%に設定 */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* X軸方向とY軸方向に移動して中央揃えに配置 */
+  }
+
+  .inner-circle {
+    background: #ffebc3; /* 背景色を黄色に設定 */
+    border-radius: 50%; /* 角を50%の半径で丸く設定 */
+    width: 300px; /* 幅を300pxに設定 */
+    height: 300px; /* 高さを300pxに設定 */
+    z-index: -1; /* 重なり順を最背面に設定 */
+  }
+
+  .outer-circle {
+    background: white; /* 背景色を黄色に設定 */
+    border-radius: 50%; /* 角を50%の半径で丸く設定 */
+    width: 500px; /* 幅を500pxに設定 */
     height: 500px; /* 高さを500pxに設定 */
-    width: 100%; /* 幅を100%に設定 */
-    margin-top: 3em; /* 上側の余白を設定 */
-
-    img {
-        width: 70%; /* 画像の幅を70%に設定 */
-        position: absolute; /* 絶対位置に配置 */
-        left: 50%; /* 左端を50%に設定 */
-        transform: translate(-50%); /* X軸方向に移動して中央揃えに配置 */
-
-    }
-
-    .inner-circle, .outer-circle {
-        position: absolute; /* 絶対位置に配置 */
-        border-radius: 50%; /* 角を50%の半径で丸く設定 */
-        left: 50%; /* 左端を50%に設定 */
-        top: 50%; /* 上端を50%に設定 */
-        transform: translate(-50%, -50%); /* X軸方向とY軸方向に移動して中央揃えに配置 */
-    }
-
-    .inner-circle {
-        background: #FFEBC3; /* 背景色を黄色に設定 */
-        border-radius: 50%; /* 角を50%の半径で丸く設定 */
-        width: 300px; /* 幅を300pxに設定 */
-        height: 300px; /* 高さを300pxに設定 */
-        z-index: -1; /* 重なり順を最背面に設定 */
-    }
-
-    .outer-circle {
-        background: white; /* 背景色を黄色に設定 */
-        border-radius: 50%; /* 角を50%の半径で丸く設定 */
-        width: 500px; /* 幅を500pxに設定 */
-        height: 500px; /* 高さを500pxに設定 */
-        z-index: -2; /* 重なり順を最背面に設定 */
-    }
+    z-index: -2; /* 重なり順を最背面に設定 */
+  }
 }
 
 @media (min-width: 998px) {
-    .wrap {
-        margin: 0 4em; /* 外側の余白を設定 */
+  .wrap {
+    margin: 0 4em; /* 外側の余白を設定 */
+  }
+
+  .hide-desktop {
+    display: none; /* デスクトップサイズで非表示にする */
+  }
+  .hide-mobile {
+    display: block; /* モバイルサイズで表示する */
+  }
+
+  .header-left {
+    display: flex; /* フレックスボックスを使う */
+    justify-content: space-between; /* 子要素を左右に分散配置 */
+    align-items: center; /* 子要素を中央に配置 */
+    gap: 1em; /* 子要素間の間隔を1emに設定 */
+
+    .divider {
+      height: 50px; /* 高さを50pxに設定 */
+      width: 50px; /* 幅を50pxに設定 */
+      border-right: 1px solid gray; /* ホームの左側にラインを引く */
     }
 
-    .hide-desktop {
-        display: none; /* デスクトップサイズで非表示にする */
+    a {
+      text-decoration: none; /* 下線を非表示にする */
+      color: black; /* テキストの色を黒に設定 */
+      font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
     }
-    .hide-mobile {
-        display: block; /* モバイルサイズで表示する */
+  }
+
+  nav ul {
+    position: unset; /* 位置を固定しない */
+    background: none; /* 背景色を透明に設定 */
+    display: flex; /* フレックスボックスを使う */
+    gap: 2em; /* 子要素間の間隔を2emに設定 */
+    height: auto; /* 高さを自動に設定 */
+    width: auto; /* 幅を自動に設定 */
+    transform: translateX(0%); /* X軸方向に移動しない */
+
+    li a {
+      font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
     }
-
-    .header-left {
-        display: flex; /* フレックスボックスを使う */
-        justify-content: space-between; /* 子要素を左右に分散配置 */
-        align-items: center; /* 子要素を中央に配置 */
-        gap: 1em; /* 子要素間の間隔を1emに設定 */
-
-        .divider {
-            height: 50px; /* 高さを50pxに設定 */
-            width: 50px; /* 幅を50pxに設定 */
-            border-right: 1px solid gray; /* ホームの左側にラインを引く */
-        }
-
-        a {
-            text-decoration: none; /* 下線を非表示にする */
-            color: black; /* テキストの色を黒に設定 */
-            font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
-        }
-    }
-
-    nav ul {
-        position: unset; /* 位置を固定しない */
-        background: none; /* 背景色を透明に設定 */
-        display: flex; /* フレックスボックスを使う */
-        gap: 2em; /* 子要素間の間隔を2emに設定 */
-        height: auto; /* 高さを自動に設定 */
-        width: auto; /* 幅を自動に設定 */
-        transform: translateX(0%); /* X軸方向に移動しない */
-
-        li a {
-            font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
-        }
-    }
+  }
 }
 
 @media (min-width: 1000px) {
-    h1, p {
-        text-align: left; /* テキストを左寄せに配置 */
-    }
+  h1,
+  p {
+    text-align: left; /* テキストを左寄せに配置 */
+  }
 
-    h1 img {
-        margin: 0; /* 余白を0にする */
-    }
+  h1 img {
+    margin: 0; /* 余白を0にする */
+  }
 
-    main {
-        width: 50%; /* 幅を50%に設定 */
-    }
+  main {
+    width: 50%; /* 幅を50%に設定 */
+  }
 
-    .cat-container {
-        margin-top: 0; /* 上側の余白を0にする */
-    }
+  .cat-container {
+    margin-top: 0; /* 上側の余白を0にする */
+  }
 
-    /* 特異性を高める */
-    .cat-container .inner-circle {
-        width: 500px; /* 幅を500pxに設定 */
-        height: 500px; /* 高さを500pxに設定 */
-    }
+  /* 特異性を高める */
+  .cat-container .inner-circle {
+    width: 500px; /* 幅を500pxに設定 */
+    height: 500px; /* 高さを500pxに設定 */
+  }
 
-    /* 特異性を高める */
-    .cat-container .outer-circle {
-        width: 1000px; /* 幅を1000pxに設定 */
-        height: 1000px; /* 高さを1000pxに設定 */
-    }
+  /* 特異性を高める */
+  .cat-container .outer-circle {
+    width: 1000px; /* 幅を1000pxに設定 */
+    height: 1000px; /* 高さを1000pxに設定 */
+  }
 
-    .cat-container {
-        position: absolute; /* 絶対位置に配置 */
-        z-index: -1; /* 重なり順を最背面に設定 */
-        width: 50%; /* 幅を50%に設定 */
-        top: 20%; /* 上端を20%に設定 */
-        right: 0; /* 右端に配置 */
-    }
+  .cat-container {
+    position: absolute; /* 絶対位置に配置 */
+    z-index: -1; /* 重なり順を最背面に設定 */
+    width: 50%; /* 幅を50%に設定 */
+    top: 20%; /* 上端を20%に設定 */
+    right: 0; /* 右端に配置 */
+  }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
+  .wrap {
+    margin: 0 auto; /* 外側の余白を設定 */
+    padding: 0 2em; /* 内側の余白を設定 */
+    max-width: 1200px; /* 最大幅を1200pxに設定 */
+  }
 
-    .wrap {
-        margin: 0 auto; /* 外側の余白を設定 */
-        padding: 0 2em; /* 内側の余白を設定 */
-        max-width: 1200px; /* 最大幅を1200pxに設定 */
+  a.primary-cta {
+    display: inline-block; /* インラインブロック要素にする */
+    width: auto; /* 幅を自動に設定 */
+    padding: 1em 2em; /* 内側の余白を設定 */
+  }
+
+  .cat {
+    position: relative;
+
+    img {
+      max-width: 400px; /* 最大幅を400pxに設定 */
+      left: 50%; /* 左端を50%に設定 */
     }
-
-    a.primary-cta {
-        display: inline-block; /* インラインブロック要素にする */
-        width: auto; /* 幅を自動に設定 */
-        padding: 1em 2em; /* 内側の余白を設定 */
-    }
-
-    .cat {
-        position: relative;
-
-        img {
-            max-width: 400px; /* 最大幅を400pxに設定 */
-            left: 50%; /* 左端を50%に設定 */
-        }
-    }
+  }
 }
