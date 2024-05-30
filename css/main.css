@@ -189,7 +189,7 @@ a.primary-cta {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 950px) {
   h1,
   p {
     text-align: left; /* テキストを左寄せに配置 */
@@ -203,20 +203,18 @@ a.primary-cta {
     width: 50%; /* 幅を50%に設定 */
   }
 
-  .cat-container {
+  .cat {
     margin-top: 0; /* 上側の余白を0にする */
-  }
 
-  /* 特異性を高める */
-  .cat-container .inner-circle {
-    width: 500px; /* 幅を500pxに設定 */
-    height: 500px; /* 高さを500pxに設定 */
-  }
+    .inner-circle {
+      width: 500px; /* 幅を500pxに設定 */
+      height: 500px; /* 高さを500pxに設定 */
+    }
 
-  /* 特異性を高める */
-  .cat-container .outer-circle {
-    width: 1000px; /* 幅を1000pxに設定 */
-    height: 1000px; /* 高さを1000pxに設定 */
+    .outer-circle {
+      width: 1000px; /* 幅を1000pxに設定 */
+      height: 1000px; /* 高さを1000pxに設定 */
+    }
   }
 
   .cat-container {
