@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box; /* ボックスモデルをborder-boxに設定 */
-}
-
 /* Homeを非表示にする */
 .hide-mobile {
     display: none;
