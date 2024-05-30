@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@markuplint/html-spec": "^4.8.0",
+    "markuplint": "^4.9.0",
     "prettier": "^3.2.5"
   },
   "scripts": {
