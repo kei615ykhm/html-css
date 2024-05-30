@@ -1,88 +1,100 @@
-<!DOCTYPE html> 
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8"> <!--文字エンコーディングの設定-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ビューポートの設定-->
-    <title>Document</title> <!--ページのタイトル-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google Fontsの事前接続-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Google Fontsの事前接続-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!--Google Fontsのスタイルシートのリンク-->
-    <link rel="stylesheet" href="./css/main.css"> <!-- main.cssスタイルシートのリンク -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <!--文字エンコーディングの設定-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ビューポートの設定-->
+    <title>Document</title>
+    <!--ページのタイトル-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!--Google Fontsの事前接続-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Google Fontsの事前接続-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google Fontsのスタイルシートのリンク-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- main.cssスタイルシートのリンク -->
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- ページ全体を囲むwrapクラス -->
 
-    <div class="wrap"> <!-- ページ全体を囲むwrapクラス -->
-        
-        <header>
-            <div class="header-left">
-                <!-- ロゴのリンク　クリックするとindex.htmlに移動 -->
-                <a href="index.html">
-                    <img src="logo.svg" alt="Friskay Logo">
-                </a>
-                <!-- モバイル表示では非表示になる区切り線 -->
-                <div class="divider" hide-mobile></div>
-                <!-- モバイル表示では非表示、タブレットサイズ以上で表示されるHomeのリンク -->
-                <a href="#" class="home hide-mobile">Home</a> 
-            </div>
-
-            <nav>
-                <!-- モバイル表示でメニューを開くためのハンバーガーアイコン。デスクトップでは非表示 -->
-                <a href="#" class="menu-open hide-desktop">
-                    <img src="menu.svg" alt="Open menu">
-                </a>
-                <ul>
-                    <li class="hide-desktop">
-                        <!-- メニューを閉じるためのアイコンクリック -->
-                        <a href="#" class="menu-close">
-                            <img src="close.svg" alt="close menu"> 
-                        </a>
-                        <!-- 以下、ナビゲーションメニュー項目 -->
-                    </li>
-                    <li><a href="#">Our Food</a></li>
-                    <li><a href="#">Ingredients</a></li>
-                    <li><a href="#">Studies</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <!-- メイン見出し。bonkers.svgを含む -->
-            <h1>Your cat will go <img src="bonkers.svg" alt="Text that says bonkers"></h1>
-            <!-- サブヘッドとしての段落 -->
-            <p class="subhead">
-                ..for the world’s best testing cat food, sourced with
-                only the finest ingredients. Made with love from the
-                heart of Mississippi.
-            </p>
-            <!-- プライマリーCAT（コールトゥアクション）のボタン -->
-            <a href="#" class="primary-cta">Get Bonkers</a>
-        </main>
-
-        <div class="cat-container">
-            <!-- 猫のイラスト画像 -->
-            <img src="cat.png" alt="cat illustration">
-            <!-- 内側の円形要素 -->
-            <div class="inner-circle"></div>
-            <!-- 外側の円形要素 -->
-            <div class="outer-circle"></div>
+      <header>
+        <div class="header-left">
+          <!-- ロゴのリンク　クリックするとindex.htmlに移動 -->
+          <a href="index.html">
+            <img src="logo.svg" alt="Friskay Logo" />
+          </a>
+          <!-- モバイル表示では非表示になる区切り線 -->
+          <div class="divider hide-mobile"></div>
+          <!-- モバイル表示では非表示、タブレットサイズ以上で表示されるHomeのリンク -->
+          <a href="#" class="home hide-mobile">Home</a>
         </div>
+
+        <nav>
+          <!-- モバイル表示でメニューを開くためのハンバーガーアイコン。デスクトップでは非表示 -->
+          <a href="#" class="menu-open hide-desktop">
+            <img src="menu.svg" alt="Open menu" />
+          </a>
+          <ul>
+            <li class="hide-desktop">
+              <!-- メニューを閉じるためのアイコンクリック -->
+              <a href="#" class="menu-close">
+                <img src="close.svg" alt="close menu" />
+              </a>
+              <!-- 以下、ナビゲーションメニュー項目 -->
+            </li>
+            <li><a href="#">Our Food</a></li>
+            <li><a href="#">Ingredients</a></li>
+            <li><a href="#">Studies</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- メイン見出し。bonkers.svgを含む -->
+        <h1>
+          Your cat will go
+          <img src="bonkers.svg" alt="Text that says bonkers" />
+        </h1>
+        <!-- サブヘッドとしての段落 -->
+        <p class="subhead">
+          ..for the world’s best testing cat food, sourced with only the finest
+          ingredients. Made with love from the heart of Mississippi.
+        </p>
+        <!-- プライマリーCAT（コールトゥアクション）のボタン -->
+        <a href="#" class="primary-cta">Get Bonkers</a>
+      </main>
+
+      <div class="cat-container">
+        <div class="cat">
+          <!-- 猫のイラスト画像 -->
+          <img src="cat.png" alt="cat illustration" />
+          <!-- 内側の円形要素 -->
+          <div class="inner-circle"></div>
+          <!-- 外側の円形要素 -->
+          <div class="outer-circle"></div>
+        </div>
+      </div>
     </div>
 
     <script>
-        
-        const menu = document.querySelector('nav ul');
-        const menuBtn = document.querySelector('.menu-open');
-        const closeBtn = document.querySelector('.menu-close');
+      const menu = document.querySelector('nav ul');
+      const menuBtn = document.querySelector('.menu-open');
+      const closeBtn = document.querySelector('.menu-close');
 
-        menuBtn.addEventListener('click', () => {
-            menu.classList.add('open');
-        });
+      menuBtn.addEventListener('click', () => {
+        menu.classList.add('open');
+      });
 
-        closeBtn.addEventListener('click', () => {
-            menu.classList.remove('open');
-        });
-
+      closeBtn.addEventListener('click', () => {
+        menu.classList.remove('open');
+      });
     </script>
-</body>
+  </body>
 </html>
