@@ -98,7 +98,7 @@ a.primary-cta {
     margin-top: 3em; /* 上側の余白を設定 */
 }
 
-.cat-container {
+.cat {
     position: relative; /* 相対位置に配置 */
     height: 500px; /* 高さを500pxに設定 */
     width: 100%; /* 幅を100%に設定 */
