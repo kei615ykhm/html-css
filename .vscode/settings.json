@@ -4,5 +4,5 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "markuplint.enable": true,
-  "cSpell.ignoreWords": ["markuplint"]
+  "cSpell.ignoreWords": ["markuplint", "stylelint"]
 }
