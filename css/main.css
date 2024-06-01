@@ -19,6 +19,11 @@ body {
 header {
   display: flex; /* フレックスボックスを使う */
   justify-content: space-between; /* 子要素を左右に分散配置 */
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* nav要素内のul要素のスタイル */
