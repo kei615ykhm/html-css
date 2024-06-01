@@ -51,6 +51,11 @@ nav ul {
   li {
     margin: 2em 0; /* 上下の余白を設定 */
 
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
     &:nth-last-of-type(1) {
       /* 最後の要素に対して */
       margin-bottom: 2em; /* 下側の余白を設定 */
