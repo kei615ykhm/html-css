@@ -2,21 +2,7 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "indentation": 2,
-    "string-quotes": "double",
     "color-hex-case": "lower",
-    "max-empty-lines": 1,
-    "block-no-empty": true,
-    "selector-pseudo-element-colon-notation": "double",
-    "declaration-colon-space-after": "always",
-    "declaration-colon-space-before": "never",
-    "block-opening-brace-space-before": "always",
-    "selector-list-comma-newline-after": "always",
-    "rule-empty-line-before": [
-      "always",
-      {
-        "except": ["first-nested"],
-        "ignore": ["after-comment"]
-      }
-    ]
+    "max-empty-lines": 1
   }
 }
