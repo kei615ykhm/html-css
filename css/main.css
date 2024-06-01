@@ -42,6 +42,11 @@ nav ul {
   transform: translateX(100%); /* X軸方向に移動 */
   transition: transform 0.5s ease-in-out; /* サブメニューのアニメーションの設定 */
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* ハンバーガーメニューを開いたときのスタイル */
   li {
     margin: 2em 0; /* 上下の余白を設定 */
