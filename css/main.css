@@ -127,6 +127,8 @@ a.primary-cta {
     position: absolute; /* 絶対位置に配置 */
     left: 50%; /* 左端を50%に設定 */
     transform: translate(-50%); /* X軸方向に移動して中央揃えに配置 */
+    max-width: 100%;
+    height: auto;
   }
 
   .inner-circle,
