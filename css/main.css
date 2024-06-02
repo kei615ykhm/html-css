@@ -7,7 +7,7 @@
 body {
   background-color: #fffbf3; /* 背景色の設定 */
   margin: 0; /* 余白を0にする */
-  font-family: 'Inter'; /* フォントの指定 */
+  font-family: Inter; /* フォントの指定 */
 }
 
 /* .wrapクラスのスタイル */
@@ -168,6 +168,7 @@ a.primary-cta {
   .hide-desktop {
     display: none; /* デスクトップサイズで非表示にする */
   }
+
   .hide-mobile {
     display: block; /* モバイルサイズで表示する */
   }
